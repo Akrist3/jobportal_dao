@@ -1,52 +1,96 @@
 # JobPortal DAO
 
-A **Data Access Object (DAO)** layer implementation for a Job Portal application — providing a clean, modular way to interact with the database for job seekers, employers, and administrators.
+JobPortal DAO is a **Data Access Object (DAO) layer** for a Job Portal application.  
+It provides a structured and maintainable way to interact with the database by separating persistence logic from business logic.
 
-This repository contains Java classes that implement the DAO pattern, encapsulating all database access logic for core entities of a job portal system. The DAO design separates database logic from business logic for improved maintainability and testability. :contentReference[oaicite:1]{index=1}
+This project is designed to be used as part of a larger Job Portal system.
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
-- [About](#about)  
-- [Features](#features)  
-- [Technologies Used](#technologies-used)  
-- [Project Structure](#project-structure)  
-- [Prerequisites](#prerequisites)  
-- [Installation & Setup](#installation--setup)  
-- [Usage](#usage)  
-- [Contributing](#contributing)  
+- [About](#about)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Installation and Setup](#installation-and-setup)
+- [Usage](#usage)
+- [Contributing](#contributing)
 - [License](#license)
 
 ---
 
-## 🧾 About
+## About
 
-The **JobPortal DAO** module provides a set of DAO interfaces and implementations that abstract database operations related to jobs, users, applications, and other job portal entities. It is designed as part of a larger job portal system and can be integrated into any Java backend that requires database access following DAO principles.
+The JobPortal DAO module implements the **DAO design pattern** to manage database operations related to job seekers, employers, job postings, and applications.
 
----
-
-## ⭐ Features
-
-- Clear separation of data persistence logic using DAO pattern  
-- Interfaces for common CRUD operations  
-- JDBC or ORM-based implementations (based on project needs)  
-- Easily extendable to support additional database operations
+All database interactions are encapsulated within DAO classes, improving:
+- Code readability  
+- Maintainability  
+- Scalability  
+- Testability  
 
 ---
 
-## 🛠 Technologies Used
+## Features
 
-The project uses the following core technologies:
-
-- **Java** – Primary programming language  
-- **JDBC / ORM** – For database connectivity  
-- **Maven/Gradle** (optional) – Build and dependency management  
-- **JUnit** (optional) – Unit testing framework
-
-> Note: Confirm the build tool and libraries used in your project and update this section accordingly.
+- DAO pattern implementation
+- Clean separation of database logic
+- CRUD operations support
+- Easily extendable architecture
+- Database-independent design
 
 ---
 
-## 📁 Project Structure
+## Technologies Used
+
+- Java
+- JDBC
+- MySQL (or any relational database)
+- Maven (optional)
+- JUnit (optional)
+
+jobportal_dao/
+│
+├── src/
+│ └── main/
+│ └── java/
+│ ├── dao/
+│ │ └── interfaces
+│ ├── daoimpl/
+│ │ └── implementations
+│ ├── model/
+│ │ └── entity classes
+│ └── util/
+│ └── database utilities
+│
+├── .gitignore
+├── pom.xml
+└── README.md
+
+
+---
+
+## Prerequisites
+
+Before running this project, ensure you have:
+
+- JDK 8 or higher
+- MySQL or any relational database
+- Maven (if used)
+- IDE (IntelliJ IDEA / Eclipse / VS Code)
+
+---
+
+## Installation and Setup
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/Akrist3/jobportal_dao.git
+cd jobportal_dao
+
+
+## Project Structure
 
