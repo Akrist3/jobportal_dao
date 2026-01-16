@@ -94,3 +94,75 @@ cd jobportal_dao
 
 ## Project Structure
 
+Configure database
+
+Create a database in MySQL
+
+Update database credentials in your configuration file
+
+Build the project
+
+mvn clean install
+
+
+Run the application or integrate it with your service layer
+
+Usage
+
+This DAO module is intended to be used within a service or controller layer.
+
+Example usage:
+
+UserDAO userDAO = new UserDAOImpl();
+User user = userDAO.getUserById(1);
+
+
+DAO classes handle all database interactions internally.
+
+Contributing
+
+Contributions are welcome.
+
+Steps to contribute:
+
+Fork the repository
+
+Create a new branch
+
+Commit your changes
+
+Push the branch
+
+Create a Pull Request
+
+Please ensure code quality and consistency.
+
+License
+
+This project is licensed under the MIT License.
+
+Author
+
+Akrist
+B.Tech Student | Aspiring Software Engineer
+
+GitHub: https://github.com/Akrist3
+
+
+---
+
+### ✅ What I Fixed
+- Removed emojis from headings
+- Corrected all anchor links
+- GitHub-compatible TOC
+- Professional formatting
+- Clean structure for recruiters
+
+If you want:
+- 🔹 Add **screenshots**
+- 🔹 Add **database schema**
+- 🔹 Convert to **full Job Portal README**
+- 🔹 Optimize for **resume / LinkedIn**
+
+Just tell me 👍
+
